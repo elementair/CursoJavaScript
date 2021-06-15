@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+</head>
+
+
+
+<body>
+    <h1>JavaScript :)</h1>
+    <script>
+
+
+        //CLASE 3 VAR & LET
+        console.log("*** CLASE 3 VAR & LET ***");
+        var hola = "Hola mundo";
+        console.log(hola);
+        let hola2 = "hello World"
+        console.log(hola2);
+        console.log(window);
+        console.log(window.hola);
+        console.log(window.hola2);
+
+        if (true) {
+            var a = 3;
+            console.log(a);
+        }
+
+        let musica = "Rock";
+        console.log("Variable Musica antes del Bloque", musica);
+        // Bloque
+        {
+           let musica = "Pop";
+           console.log("Variable Musica dentro del Bloque", musica); 
+        }
+        console.log("Variable Musica dentro del Bloque", musica);
+
+        //CLASE 4 CONSTANTES
+        console.log("*** CLASE 4 CONSTANTES ***");
+
+        let f;
+        const PI =3.1416;
+        const NUEVE=9;
+        console.log(PI);
+
+        f="many";
+
+        console.log(f); 
+
+        const objeto ={
+            nombre:"many",
+            edad:26
+        }
+        let colores=["Blanco","Verde","Azul"];
+
+        console.log(objeto);
+        console.log(colores);
+
+        objeto.correo="many@hotmail.com";
+        colores.push("Rojo");
+
+        console.log(objeto);
+        console.log(colores);
+        
+        objeto.sexo="masculino";
+        console.log(objeto);
+
+
+        //CLASE 5 CADENAS DE TEXTO (String)
+        /*
+        MDN = google / recursos para desarrolladores
+        */
+
+        let nombre = "Emanuel";
+        let apellido= 'Arias';
+        let saludo = new String("Hola Mundo");
+        let lorem = "      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, tempore! Recusandae non modi sit repellendus ipsa voluptates facilis accusamus delectus aliquam, alias optio cumque quisquam officiis in molestiae cum magni!    ";
+
+        console.log(nombre.length,
+        apellido.length,
+        saludo.length,
+        nombre.toUpperCase(),
+        apellido.toLocaleLowerCase(),
+        lorem.includes("emanuel"),
+        lorem.trim(),
+        lorem.split(" "),
+        lorem.split(",")
+        );
+        console.log(lorem);
+
+
+
+        
+
+
+
+    </script>
+
+</body>
+
+</html>
