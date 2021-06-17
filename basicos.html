@@ -12,11 +12,19 @@
 
 <body>
     <h1>JavaScript :)</h1>
+
+    
     <script>
 
 
-        //CLASE 3 VAR & LET
-        console.log("*** CLASE 3 VAR & LET ***");
+        //CLASE 3 VAR & LET *********************************
+        let clase3 =`
+       
+        * * CLASE 3 VAR & LET **
+        
+        `;
+        console.log(clase3);
+
         var hola = "Hola mundo";
         console.log(hola);
         let hola2 = "hello World"
@@ -39,8 +47,13 @@
         }
         console.log("Variable Musica dentro del Bloque", musica);
 
-        //CLASE 4 CONSTANTES
-        console.log("*** CLASE 4 CONSTANTES ***");
+        //CLASE 4 CONSTANTES ************************************
+        let clase4 =`
+       
+        * * CLASE 4 CONSTANTES **
+        
+        `;
+        console.log(clase4);
 
         let f;
         const PI =3.1416;
@@ -70,11 +83,17 @@
         console.log(objeto);
 
 
-        //CLASE 5 CADENAS DE TEXTO (String)
+        //CLASE 5 CADENAS DE TEXTO (String) ********************
+        let clase5 =`
+       
+        * * CLASE 5 CADENAS DE TEXTO (String) **
+        
+        `;
+        console.log(clase5);
         /*
         MDN = google / recursos para desarrolladores
         */
-
+       
         let nombre = "Emanuel";
         let apellido= 'Arias';
         let saludo = new String("Hola Mundo");
@@ -92,9 +111,162 @@
         );
         console.log(lorem);
 
+        //CLASE 6 Temple String *********************************
+        let clase6 =`
+       
+        * * CLASE 6 Temple String (String) **
+        
+        `;
+        console.log(clase6);
+        //Conctencacion
+        let nombre2 = "Emanuel";
+        let apellido2 = "Arias";
+        let saludo2 = "Hola "+ nombre2 +" "+ apellido2;
+
+        console.log(saludo2);
+
+        //Interpolacion de variables
+        let saludo3 = `Hola mi nombre es ${nombre2} ${apellido2}`; 
+        console.log(saludo3);
+        //Templete String
+        let ul =`
+            <ul>
+                <li>Primavera</li>
+                <li>Verano</li>
+                <li>Otoño</li>
+                <li>Invierno</li>
+            </ul>`;
+        console.log(ul);
+
+        //concatenacion tradicional String
+        let ul3 ="<ul>"
+            ul3 +="<li>Primavera</li>"
+            ul3 +="<li>Verano</li>"
+            ul3 +="<li>Otoño</li>"
+            ul3 +="<li>Invierno</li>"
+            ul3 +=" </ul>";
+        console.log(ul3);
+
+        //CLASE 7 NUMEROS *************************************
+        let clase7 =`
+       
+        * * CLASE 7 NUMEROS **
+        
+        `;
+        console.log(clase7);
+
+        let x =2 
+        let y = new Number(1);
+        let w = 3.1416;
+        let z = "5.6"
+
+
+        console.log(x,y);
+        // .toFixed me define los decimales a mostrar
+        console.log(w.toFixed(10));
+        // parceInt, me devuelve la parte entera
+        console.log(parseInt(w));
+        // parceFloat, imprime la parte entera y parte decimal 
+        console.log(parseFloat(w));
+        // typeof nos muestra el tipo de dato de la variable
+        console.log (typeof w, typeof z);
+        console.log(x+y)
+        console.log(w+ parseFloat(z))
+
+         //CLASE 8 BOOLEANS *************************************
+        let clase8 =`
+       
+        * * CLASE 8 BOOLEANS **
+        
+        `;
+        console.log(clase8);
+
+        let verdadero = true;
+        let falso = false;
+
+        // Boolean() constructor, craccion de variables apartir del contructor
+        let i = Boolean(true);
+        let j = Boolean(false);
+
+        console.log(verdadero, falso, i, j);
+        console.log(typeof verdadero, typeof falso)
+
+
+        console.log(Boolean(0));
+        console.log(Boolean(""));
+        console.log(Boolean(-12));
+        console.log(Boolean(" "));
+         //CLASE 9  undefined, null & NaN *******************
+
+        let clase9 =`
+       
+        * * CLASE 9  undefined, null & NaN **
+        
+        `;
+        console.log(clase9);
+        // undefined indica que no se ha inicializado
+        let indefinida;
+        console.log(indefinida);
+
+        // null es un valor intencionado por el programador
+        let nulo= null;
+        console.log(nulo);
+        // NaN Not a Number
+        let noEsUnNumero = "Hola" * 3.7;
+        console.log(noEsUnNumero);
+        
+        //CLASE 10  FUNCIONES *******************
+        let clase10 =`
+       
+        * * CLASE 10  FUNCIONES **
+        
+        `;
+        console.log(clase10);
+
+        // FUNCION DECLARADA
+        function estEsUnaFuncion(){
+
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+
+        }
+        // Invocacion de funciones
+        estEsUnaFuncion();
+
+        //Funcion que devuelve valor
+        function unaFuncionQueDevuelveValor(){
+
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+            return "La función ha retornado una cadena de texto";
+
+        }
+        var valorDeFuncion = unaFuncionQueDevuelveValor();
+
+        console.log(valorDeFuncion)
+
+        // Funcion con parametros
+        function saludar(nombre, edad){
+
+            console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
+        }
+
+        saludar("emanuel", 26);
+
+        
+        
 
 
         
+
+
+
+
+
+
+
 
 
 
