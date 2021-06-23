@@ -11,9 +11,10 @@
 
 
 <body>
-    <h1>JavaScript :)</h1>
+    <h1>JavaScript</h1>
     <script>
-        //CLASE 3 VAR & LET *********************************
+        
+    //CLASE 3 VAR & LET *********************************
         let clase3 =`
        
         * * CLASE 3 VAR & LET **
@@ -43,7 +44,7 @@
         }
         console.log("Variable Musica dentro del Bloque", musica);
 
-        //CLASE 4 CONSTANTES ************************************
+    //CLASE 4 CONSTANTES ************************************
         let clase4 =`
        
         * * CLASE 4 CONSTANTES **
@@ -79,7 +80,7 @@
         console.log(objeto);
 
 
-        //CLASE 5 CADENAS DE TEXTO (String) ********************
+    //CLASE 5 CADENAS DE TEXTO (String) ********************
         let clase5 =`
        
         * * CLASE 5 CADENAS DE TEXTO (String) **
@@ -107,7 +108,7 @@
         );
         console.log(lorem);
 
-        //CLASE 6 Temple String *********************************
+    //CLASE 6 Temple String *********************************
         let clase6 =`
        
         * * CLASE 6 Temple String (String) **
@@ -143,7 +144,7 @@
             ul3 +=" </ul>";
         console.log(ul3);
 
-        //CLASE 7 NUMEROS *************************************
+    //CLASE 7 NUMEROS *************************************
         let clase7 =`
        
         * * CLASE 7 NUMEROS **
@@ -169,7 +170,7 @@
         console.log(x+y)
         console.log(w+ parseFloat(z))
 
-         //CLASE 8 BOOLEANS *************************************
+    //CLASE 8 BOOLEANS *************************************
         let clase8 =`
        
         * * CLASE 8 BOOLEANS **
@@ -192,7 +193,7 @@
         console.log(Boolean(""));
         console.log(Boolean(-12));
         console.log(Boolean(" "));
-         //CLASE 9  undefined, null & NaN *******************
+    //CLASE 9  undefined, null & NaN *******************
 
         let clase9 =`
        
@@ -211,7 +212,7 @@
         let noEsUnNumero = "Hola" * 3.7;
         console.log(noEsUnNumero);
         
-        //CLASE 10  FUNCIONES *******************
+    //CLASE 10  FUNCIONES *******************
         let clase10 =`
        
         * * CLASE 10  FUNCIONES **
@@ -262,7 +263,7 @@
         }
         funcionExpresada();
 
-        //CLASE 11  Arreglos(Arrays) *******************
+    //CLASE 11  Arreglos(Arrays) *******************
         let clase11 =`
        
          * * CLASE 11  Arreglos(Arrays) **
@@ -295,10 +296,62 @@
         colores2.pop();
         console.log(colores2);
 
-        colores2.forEach(function(el, index){
-            console.log(`<li id="${index}">${el}</li>`);
-
+        colores2.forEach(function(el, i){
+            console.log(`<li id="${i}">${el}</li>`);
         });
+    // CLASE 12 OBJETOS
+        let clase12 =`
+       
+        * *CLASE 12 OBJETOS **
+     
+        `;
+        console.log(clase12);
+
+        let h = new String("Hola");
+        console.log(h);
+        
+        const k = {}
+        console.log(k);
+        
+        const ob = new Object();
+        console.log(ob);
+        // dentro de un objeto las variables se les va ha llamar atributos/propiedad y a las funciones se les llama metodos
+        const manuel={
+            nombre : "Manuel",
+            apellido : "Arias",
+            edad : 35,
+            pasatiempo:["Guitarra","ejercicio","series"],
+            soltero:true,
+            contacto: {
+                email: "manuel@creactivmedia.com.mx",
+                facebook:"lasjkdlklajksld",
+                twitter:"kashdkashdjksah",
+                Instagram:"hasdkjahsjk"
+            },
+            saludar: function(nombre){
+                console.log(`Hola ${nombre}`)
+            },
+            decirMiNombre: function(){
+                console.log(`Hola mi nombre es: ${this.nombre} ${this.apellido}`);
+            }
+        }
+
+        console.log(manuel);
+        console.log(manuel.contacto);
+        console.log(manuel.contacto.email)
+        manuel.saludar("emanuel");
+        manuel.decirMiNombre();
+
+        console.log(Object.keys(manuel));
+        console.log(Object.values(manuel));
+        console.log(manuel.hasOwnProperty("nombre"));
+        console.log(manuel.hasOwnProperty("nacimiento"));
+
+
+
+
+
+
 
 
 
